@@ -1,0 +1,16 @@
+user {
+    id,
+    name,
+    passwd
+    role,
+}
+
+post {
+    id,
+    title,
+    headContent,
+    content,
+    categoryB > categoryA,
+    user : user,
+
+}
