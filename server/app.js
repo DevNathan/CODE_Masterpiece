@@ -11,15 +11,15 @@ connect();
 const app = express();
 const PORT = process.env.PORT;
 
-app.use(express.urlencoded({extended: false}));
+app.use(express.urlencoded({ extended: false }));
 app.use(
-    cors({
-        origin: "*",
-        method: ["GET", "POST", "DELETE", "PUT"],
-        credential: true,
-    })
+  cors({
+    origin: "*",
+    method: ["GET", "POST", "DELETE", "PUT"],
+    credential: true,
+  }),
 );
 
 app.listen(PORT, () => {
-    console.log(`server is now running on ${PORT}`);
+  console.log(`server is now running on ${PORT}`);
 });
